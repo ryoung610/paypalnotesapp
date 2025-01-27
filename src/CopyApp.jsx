@@ -1,4 +1,5 @@
-import { useState, useEffect } from "react";
+/**
+ * import { useState, useEffect } from "react"; 
 import {
   Authenticator,
   Button,
@@ -21,9 +22,9 @@ import Home from "./pages/Home";
 import Todo from "./pages/todo";
 
 
-/**
- * @type {import('aws-amplify/data').Client<import('../amplify/data/resource').Schema>}
- */
+
+  i mport('aws-amplify/data').Client<import('../amplify/data/resource').Schema>}
+ 
 
 Amplify.configure(outputs);
 const client = generateClient({
@@ -31,6 +32,7 @@ const client = generateClient({
 });
 
 export default function CopyApp() {
+
   /** const [notes, setNotes] = useState([]);
 
   useEffect(() => {
@@ -90,7 +92,7 @@ export default function CopyApp() {
     console.log(deletedNote);
 
     fetchNotes();
-  } */
+  } 
 
   return (
         <div>
@@ -111,7 +113,7 @@ export default function CopyApp() {
       }
 
 
-   {/** <Authenticator>
+   { <Authenticator>
       {({ signOut }) => (
         <Flex
           className="App"
@@ -202,5 +204,5 @@ export default function CopyApp() {
           <Button onClick={signOut}>Sign Out</Button>
         </Flex>
       )}
-    </Authenticator> */}
+    </Authenticator> */
     
