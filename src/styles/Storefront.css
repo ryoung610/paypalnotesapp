@@ -1,0 +1,82 @@
+/* src/styles/Storefront.css */
+
+/* General Styles */
+.storefront {
+    padding: 20px;
+    background-color: #1b1ec2; /* Light pastel green, reminiscent of fresh summer grass */
+    text-align: center;
+    font-family: 'Comic Sans MS', cursive, sans-serif; /* Fun, casual font for summer vibe */
+    
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+  
+  /* Headline */
+  .headline {
+    color: #ff6f61; /* Bright coral */
+    margin-bottom: 20px;
+    font-size: 2.5em;
+    text-shadow: 2px 2px #ffcc5c; /* Light yellow shadow for a sunny effect */
+  }
+  
+  /* Sunglasses Container */
+  .sunglasses-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    background: linear-gradient(135deg, #f0f8ea 0%, #5cc9ff 100%); /* Gradient from light green to light yellow */
+    padding: 20px;
+    border-radius: 10px;
+  }
+  
+  /* Sunglasses Item */
+  .sunglasses-item {
+    background-color: rgba(255, 255, 255, 0.8); /* Light, semi-transparent white */
+    border: 2px solid #4ecdc4; /* Turquoise for a beachy feel */
+    border-radius: 15px;
+    padding: 15px;
+    width: 220px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+    transition: transform 0.3s ease-in-out; /* Smooth hover effect */
+  }
+  
+  .sunglasses-item:hover {
+    transform: scale(1.05); /* Slightly enlarge on hover for interaction */
+  }
+  
+  /* Sunglasses Image */
+  .sunglasses-image {
+    width: 100%;
+    height: 200px;
+    border-radius: 15px;
+    
+    border: 3px solid #ff6f61; /* Bright coral border */
+  }
+  
+  /* Price */
+  .sunglasses-item p {
+    color: #4ecdc4; /* Turquoise color */
+    font-weight: bold;
+    margin: 10px 0;
+  }
+  
+  /* Buy Now Button */
+  .buy-now-btn {
+    background-color: #ff6f61; /* Bright coral */
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 10px;
+    font-size: 1em;
+    transition: background-color 0.3s; /* Smooth transition for button color */
+  }
+  
+  .buy-now-btn:hover {
+    background-color: #ff4757; /* A bit darker coral on hover */
+  }

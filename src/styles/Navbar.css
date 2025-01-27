@@ -1,0 +1,48 @@
+.navbar {
+    background-color: #4ecdc4; /* Turquoise for a beachy feel */
+    padding: 10px 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+    border-radius: 25px;
+}
+  
+  /* Nav List */
+  .nav-list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center; /* Center the items */
+  }
+  
+  /* Nav Items */
+  .nav-item {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    font-size: 1.1em;
+    font-family: 'Comic Sans MS', cursive, sans-serif; /* Match the playful font of the storefront */
+    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+  }
+  
+  .nav-item:hover, .nav-item.active {
+    background-color: #6193ff; /* Bright coral on hover or active */
+    border-radius: 5px;
+  }
+  
+  /* Active Link */
+  .nav-item.active {
+    font-weight: bold;
+  }
+  
+  /* For smaller screens */
+  @media (max-width: 768px) {
+    .nav-list {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .nav-item {
+      width: 100%;
+      text-align: center;
+    }
+  }

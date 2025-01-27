@@ -7,6 +7,7 @@ import About from './pages/About';
 import Navbar from './component/Navbar';
 import { Navigate } from 'react-router-dom';
 import Projects from './pages/projects';
+import Products from './pages/Products';
 
 
 const App = () => {
@@ -21,6 +22,7 @@ const App = () => {
         <Routes>
           <Route path="/home" element={<Home />} />
           <Route path="/about" element={<About />} />
+          <Route path="/products" element={<Products />} />
           <Route path="/todo" element={<Todo />} />
           <Route path="/projects" element={<Projects />} />
 

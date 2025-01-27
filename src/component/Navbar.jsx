@@ -1,11 +1,46 @@
+import React from 'react';
+import { useState } from 'react';
+import { Link, NavLink } from 'react-router-dom';
+import '../styles/Navbar.css'; // Ensure this path is correct based on your project structure
+
+// Remove these imports if not needed for the navbar
+//import { StorageImage } from '@aws-amplify/ui-react-storage';
+//import '@aws-amplify/ui-react/styles.css';
+//import { Amplify } from 'aws-amplify';
+//import {outputs} from 'amplify_outputs.json';
+//Amplify.configure(outputs);
+
+const Navbar = () => {
+  return (
+    <nav className="navbar"> {/* Changed to 'navbar' to match the CSS */}
+      <ul className="nav-list">
+        <li><NavLink to="/home" className="nav-item">Home</NavLink></li>
+        <li><NavLink to="/products" className="nav-item">Products</NavLink></li>
+        <li><NavLink to="/about" className="nav-item">About</NavLink></li>
+        <li><NavLink to="/todo" className="nav-item">Todo</NavLink></li>
+        <li><NavLink to="/projects" className="nav-item">Projects</NavLink></li>
+      </ul>
+    </nav>
+  );
+};
+
+export default Navbar;
 
 
+
+
+
+/**
+ * 
+ * 
 import React from 'react'
 import { useState } from 'react'
 //import {assets} from '../public/assets/bitcoinimage.js'
 import { Link, NavLink } from 'react-router-dom'
 import { StorageImage } from '@aws-amplify/ui-react-storage';
 import '@aws-amplify/ui-react/styles.css';import { Amplify } from 'aws-amplify';
+import '../styles/Navbar.css';
+
 //import {outputs} from 'amplify_outputs.json';
 
 //Amplify.configure(outputs);
@@ -20,10 +55,10 @@ const Navbar = () => {
     <nav className="menu-bar">
       <ul>
         <li><Link to="/home">Home</Link></li>
+        <li><Link to="/products">Products</Link></li>
         <li><Link to="/about">About</Link></li>
         <li><Link to="/todo">Todo</Link></li>
         <li><Link to="/projects">Projects</Link></li>
-
       </ul>
     </nav>
   )
@@ -31,8 +66,9 @@ const Navbar = () => {
 
 export default Navbar
 
-
-/**
+ * 
+ * 
+ * 
  * https://amplify-do35s6tp2tfqj-mai-amplifynotesdrivebucket1-ucxglu
  * 2qtcnv.s3.us-east-1.amazonaws.com/webpics/bitcoinimage.jpeg?X-Amz
  * -Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD
