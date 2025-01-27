@@ -1,5 +1,5 @@
 import React from 'react';
-import Todo from './pages/todo';
+import Todo from './pages/Todo';
 import './App.css';
 import Home from './pages/Home';
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
